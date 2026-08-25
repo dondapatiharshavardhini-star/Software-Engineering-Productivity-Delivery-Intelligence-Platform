@@ -345,5 +345,3 @@ software-engineering-analytics/
 
 ---
 
-See [`RESUME_AND_INTERVIEW_PREP.md`](RESUME_AND_INTERVIEW_PREP.md) for a resume-ready
-project description and interview Q&A based on this project.
