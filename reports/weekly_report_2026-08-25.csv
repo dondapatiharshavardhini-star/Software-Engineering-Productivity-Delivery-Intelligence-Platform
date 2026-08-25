@@ -1,0 +1,6 @@
+project_id,delivery_risk,quality_risk,review_bottleneck_risk,workload_risk,release_risk_score,project_name,criticality,risk_tier
+P009,100.0,95.3,69.5,100.0,91.2,Fraud-Detection,High,High Risk
+P008,93.1,70.0,89.1,97.1,87.3,Data-Pipeline,Medium,High Risk
+P011,96.6,54.2,66.1,81.4,74.6,Inventory-Service,Medium,High Risk
+P004,4.0,100.0,30.0,60.6,48.6,Auth-Gateway,Medium,Medium Risk
+P005,35.8,29.4,46.7,68.5,45.1,Mobile-App-iOS,Low,Medium Risk

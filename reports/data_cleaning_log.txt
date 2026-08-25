@@ -1,0 +1,50 @@
+======================================================================
+DATA CLEANING PIPELINE — Software Engineering Analytics Platform
+======================================================================
+
+[developers] starting rows: 62
+[developers] removed 2 duplicate developer_id rows (likely duplicate HRIS/Jira sync records)
+
+[sprints] starting rows: 120
+
+[issues] starting rows: 3099
+[issues] removed 31 exact-duplicate issue rows (webhook double-fire on Jira sync)
+[issues] normalized casing/whitespace on 203 status values (e.g. 'DONE  ' -> 'Done')
+[issues] winsorized 12 extreme resolution_time_hours values at the 99.5th percentile (187.0h) instead of dropping them
+[issues] 1978 rows have null severity — expected, since severity only applies to issue_type == 'Bug'
+
+[commits] starting rows: 10361
+[commits] removed 0 duplicate commit_id rows
+[commits] fixed 21 rows with impossible negative lines_added (broken git-log parser sentinel), imputed with median
+
+[pull_requests] starting rows: 2294
+[pull_requests] 265 rows missing review_time_hours — left as NULL (still-open PRs / API sync gaps), excluded from average-review-time KPI rather than imputed, to avoid biasing the metric
+
+[code_reviews] starting rows: 3332
+
+[deployments] starting rows: 769
+
+[releases] starting rows: 60
+[releases] 1 releases cancelled — retained (not dropped); cancellations are analytically meaningful, not data errors
+
+[validation] Referential integrity checks
+  issues.project_id -> projects: OK
+  issues.assignee_id -> developers: OK
+  sprints.project_id -> projects: OK
+  pull_requests.author_id -> developers: OK
+  deployments.project_id -> projects: OK
+  releases.project_id -> projects: OK
+
+[validation] Overall referential integrity: PASSED
+
+[output] Writing cleaned tables to data/processed/
+  wrote data/processed/teams.csv  (8 rows, 4 cols)
+  wrote data/processed/developers.csv  (60 rows, 7 cols)
+  wrote data/processed/projects.csv  (12 rows, 6 cols)
+  wrote data/processed/sprints.csv  (120 rows, 9 cols)
+  wrote data/processed/issues.csv  (3,068 rows, 15 cols)
+  wrote data/processed/commits.csv  (10,361 rows, 9 cols)
+  wrote data/processed/pull_requests.csv  (2,294 rows, 11 cols)
+  wrote data/processed/code_reviews.csv  (3,332 rows, 7 cols)
+  wrote data/processed/deployments.csv  (769 rows, 9 cols)
+  wrote data/processed/releases.csv  (60 rows, 10 cols)

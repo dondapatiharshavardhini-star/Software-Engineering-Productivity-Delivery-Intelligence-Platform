@@ -1,0 +1,13 @@
+project_id,delivery_risk,quality_risk,review_bottleneck_risk,workload_risk,release_risk_score,project_name,criticality,risk_tier
+P009,100.0,95.3,69.5,100.0,91.2,Fraud-Detection,High,High Risk
+P008,93.1,70.0,89.1,97.1,87.3,Data-Pipeline,Medium,High Risk
+P011,96.6,54.2,66.1,81.4,74.6,Inventory-Service,Medium,High Risk
+P004,4.0,100.0,30.0,60.6,48.6,Auth-Gateway,Medium,Medium Risk
+P005,35.8,29.4,46.7,68.5,45.1,Mobile-App-iOS,Low,Medium Risk
+P010,4.8,53.0,32.3,31.3,30.4,Customer-Portal,High,Low Risk
+P002,3.9,50.6,19.1,46.5,30.0,Payments-API,Medium,Low Risk
+P012,18.3,19.7,28.2,51.4,29.4,Analytics-Dashboard,Low,Low Risk
+P001,0.0,23.4,20.0,49.4,23.2,Checkout-Web,Low,Low Risk
+P007,6.4,12.0,33.8,2.1,13.6,Notification-Hub,Medium,Low Risk
+P003,8.4,0.0,36.2,4.5,12.3,Search-Service,Medium,Low Risk
+P006,2.2,10.1,26.2,0.0,9.6,Mobile-App-Android,Low,Low Risk

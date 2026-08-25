@@ -1,0 +1,182 @@
+
+--- Query block 1 ---
+team_name | avg_completion_pct | sprints_analyzed
+Search | 94.5 | 10
+Data-Platform | 94.2 | 10
+Identity | 93.8 | 30
+Mobile | 93.2 | 30
+Notifications | 81.9 | 10
+
+--- Query block 2 ---
+team_name | avg_velocity_last5
+Search | 53.6
+Mobile | 46.4
+Data-Platform | 45.8
+Notifications | 45.4
+Identity | 45.4
+
+--- Query block 3 ---
+team_name | first_half_avg_velocity | second_half_avg_velocity | trend
+Notifications | 38.2 | 45.4 | Improving
+Data-Platform | 42.4 | 45.8 | Improving
+Search | 51.8 | 53.6 | Improving
+Platform-Infra | 29.8 | 31.6 | Improving
+Identity | 47.0 | 46.9 | Declining
+
+--- Query block 4 ---
+priority | avg_cycle_time_days | speed_rating
+Low | 1.77 | Acceptable
+Medium | 1.26 | Acceptable
+High | 0.87 | Fast
+Critical | 0.58 | Fast
+
+--- Query block 5 ---
+project_name | total_releases | delayed_releases | delay_rate_pct
+Mobile-App-Android | 5 | 4 | 80.0
+Data-Pipeline | 5 | 4 | 80.0
+Search-Service | 5 | 3 | 60.0
+Notification-Hub | 5 | 3 | 60.0
+Inventory-Service | 5 | 3 | 60.0
+
+--- Query block 6 ---
+project_name | bug_count | total_issues | defect_rate_pct
+Search-Service | 106 | 268 | 39.6
+Data-Pipeline | 109 | 278 | 39.2
+Mobile-App-Android | 92 | 238 | 38.7
+Analytics-Dashboard | 94 | 255 | 36.9
+Mobile-App-iOS | 79 | 218 | 36.2
+
+--- Query block 7 ---
+team_name | reopened_bugs | total_bugs | reopen_rate_pct
+Data-Platform | 16 | 78 | 20.5
+Platform-Infra | 60 | 298 | 20.1
+Search | 17 | 90 | 18.9
+Notifications | 14 | 79 | 17.7
+Mobile | 46 | 266 | 17.3
+
+--- Query block 8 ---
+project_name | escaped_defects | total_bugs | escaped_rate_pct
+Data-Pipeline | 16 | 109 | 14.7
+Auth-Gateway | 10 | 85 | 11.8
+Inventory-Service | 9 | 88 | 10.2
+Fraud-Detection | 10 | 101 | 9.9
+Checkout-Web | 8 | 87 | 9.2
+
+--- Query block 9 ---
+severity | mttr_hours | bug_count
+Blocker | 29.6 | 44
+Critical | 35.0 | 139
+Major | 31.7 | 309
+Minor | 32.6 | 365
+
+--- Query block 10 ---
+team_name | reopen_rate_pct | org_avg_rate | org_stdev
+Data-Platform | 20.5 | 18.1 | 2.1
+
+--- Query block 11 ---
+team_name | avg_review_hours | prs
+Platform-Infra | 23.9 | 489
+Notifications | 18.4 | 169
+Mobile | 14.1 | 550
+Identity | 14.1 | 471
+Data-Platform | 13.6 | 170
+
+--- Query block 12 ---
+project_name | total_prs | merged_prs | merge_rate_pct
+Customer-Portal | 196 | 140 | 71.4
+Notification-Hub | 186 | 136 | 73.1
+Search-Service | 170 | 125 | 73.5
+Auth-Gateway | 205 | 152 | 74.1
+Analytics-Dashboard | 209 | 155 | 74.2
+
+--- Query block 13 ---
+pr_size_bucket | avg_review_hours | pr_count
+1. <50 lines | 13.6 | 427
+2. 50-150 lines | 16.0 | 1025
+3. 150-400 lines | 19.7 | 558
+4. 400+ lines | 36.1 | 19
+
+--- Query block 14 ---
+reviewer_id | prs_reviewed | running_total_prs
+D0051 | 121 | 242
+D0016 | 121 | 242
+D0039 | 104 | 346
+D0028 | 101 | 447
+D0026 | 98 | 545
+
+--- Query block 15 ---
+developer_id | issues_assigned | workload_percentile
+D0011 | 180 | 1.0
+D0051 | 172 | 0.979
+D0039 | 161 | 0.958
+D0028 | 155 | 0.938
+D0016 | 139 | 0.917
+
+--- Query block 16 ---
+project_name | total_deployments | deploys_per_week
+Search-Service | 87 | 4.37
+Auth-Gateway | 79 | 4.0
+Checkout-Web | 75 | 3.75
+Mobile-App-Android | 72 | 3.66
+Analytics-Dashboard | 68 | 3.5
+
+--- Query block 17 ---
+team_name | total_deployments | failed_deployments | change_failure_rate_pct
+Platform-Infra | 130 | 20 | 15.4
+Notifications | 59 | 4 | 6.8
+Identity | 226 | 15 | 6.6
+Mobile | 222 | 11 | 5.0
+Search | 66 | 3 | 4.5
+
+--- Query block 18 ---
+project_name | deploy_count | avg_delay_days
+Search-Service | 87 | 1.5
+Auth-Gateway | 79 | 0.5
+Checkout-Web | 75 | 0.3
+Mobile-App-Android | 72 | 2.5
+Analytics-Dashboard | 68 | 1.1
+
+--- Query block 19 ---
+environment | failed_deploys | rollbacks | rollback_rate_pct
+production | 26 | 16 | 61.5
+staging | 29 | 12 | 41.4
+
+--- Query block 20 ---
+project_name | total_releases | on_time_rate_pct | avg_delay_days
+Data-Pipeline | 5 | 20.0 | 4.6
+Mobile-App-Android | 5 | 20.0 | 2.5
+Analytics-Dashboard | 5 | 40.0 | 1.1
+Customer-Portal | 5 | 40.0 | 1.1
+Fraud-Detection | 5 | 40.0 | 3.1
+
+--- Query block 21 ---
+release_month | releases | delay_rate_pct
+2023-12 | 5 | 80.0
+2024-01 | 12 | 41.7
+2024-02 | 12 | 33.3
+2024-03 | 12 | 50.0
+2024-04 | 12 | 50.0
+
+--- Query block 22 ---
+project_name | quality_score | delivery_score | devops_score | project_health_score
+Fraud-Detection | 90.1 | 56.3 | 79.5 | 75.1
+Data-Pipeline | 85.3 | 59.0 | 87.2 | 76.7
+Inventory-Service | 89.8 | 57.6 | 87.2 | 77.8
+Mobile-App-iOS | 93.7 | 81.9 | 93.2 | 89.4
+Auth-Gateway | 88.2 | 94.5 | 92.4 | 91.7
+
+--- Query block 25 ---
+team_name | avg_sprint_completion_pct | bug_reopen_rate_pct | avg_pr_review_hours
+Platform-Infra | 57.6 | 20.1 | 23.9
+Notifications | 81.9 | 17.7 | 18.4
+Data-Platform | 94.2 | 20.5 | 13.6
+Mobile | 93.2 | 17.3 | 14.1
+Search | 94.5 | 18.9 | 13.2
+
+--- Query block 26 ---
+developer_id | full_name | team_name | commit_count | pr_count | issues_resolved | workload_index
+D0051 | Jessica Holmes | Platform-Infra | 514 | 108 | 114 | 1066
+D0039 | Elizabeth Fowler | Platform-Infra | 510 | 113 | 107 | 1063
+D0011 | Monica Herrera | Platform-Infra | 495 | 104 | 112 | 1031
+D0028 | Stephanie Ross | Platform-Infra | 484 | 117 | 95 | 1025
+D0016 | Brian Ramirez | Platform-Infra | 479 | 99 | 79 | 934

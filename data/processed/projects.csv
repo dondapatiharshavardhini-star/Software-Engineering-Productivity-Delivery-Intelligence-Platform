@@ -1,0 +1,13 @@
+project_id,project_name,team_id,start_date,criticality,tech_stack
+P001,Checkout-Web,T006,2023-12-17,Low,Kotlin/Android
+P002,Payments-API,T003,2023-12-25,Medium,React/TypeScript
+P003,Search-Service,T004,2023-12-20,Medium,Go
+P004,Auth-Gateway,T006,2023-12-29,Medium,Node/Express
+P005,Mobile-App-iOS,T007,2023-12-24,Low,Python/Django
+P006,Mobile-App-Android,T004,2023-11-20,Low,Node/Express
+P007,Notification-Hub,T004,2023-11-18,Medium,Python/Django
+P008,Data-Pipeline,T005,2023-12-28,Medium,Go
+P009,Fraud-Detection,T005,2023-12-29,High,Python/Django
+P010,Customer-Portal,T008,2023-11-30,High,React/TypeScript
+P011,Inventory-Service,T005,2023-11-24,Medium,React/TypeScript
+P012,Analytics-Dashboard,T006,2023-11-19,Low,Python/Django
